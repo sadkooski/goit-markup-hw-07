@@ -1,0 +1,12 @@
+:root {
+  --background-white: #ffffff;
+  --background-grey: #f5f4fa;
+  --background-dark-grey: #2f303a;
+  --title-color: #212121;
+  --text-color: #757575;
+  --active-color: #2196f3;
+  --contacts-footer: rgba(255, 255, 255, 0.6);
+  --background-image: rgba(47, 48, 58, 0.4);
+  --icons-inactive: #afb1b8;
+  --icons-inactive-footer: rgba(255, 255, 255, 0.1);
+}/*# sourceMappingURL=variables.css.map */

@@ -64,12 +64,6 @@
   padding: 0 15px;
 }
 
-.portfolio {
-  display: block;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .icon {
   display: flex;
   stroke-width: 0;
@@ -399,6 +393,11 @@
 
 /* MAIN PORTFOLIO */
 
+.portfolio {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio__nav {
   list-style-type: none;
   display: flex;
@@ -524,39 +523,7 @@
 
 /* MAIN INDEX */
 
-.background-section {
-  background-color: var(--background-dark-grey);
-  background-image: linear-gradient(
-      to bottom,
-      var(--background-image),
-      var(--background-image)
-    ),
-    url(../images/background.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.background-section__container {
-  text-align: center;
-}
-
-.background-section__button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  color: var(--background-white);
-  background: var(--active-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  padding: 10px 42px;
-  margin-top: 30px;
-}
+@import "components/bg-section";
 
 .paragraphs__list {
   list-style-type: none;

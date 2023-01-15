@@ -1,0 +1,206 @@
+.modal {
+  position: absolute;
+  transform: translateY(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--background-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+
+  &__label--comment {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  &__input {
+    margin-right: 40px;
+    margin-top: 4px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 0;
+    width: 100%;
+  }
+
+  &__textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 12px 16px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0;
+  }
+
+  &__textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__textarea:focus {
+    border-color: var(--active-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+  }
+
+  &__checkbox-link {
+    color: var(--active-color);
+    text-decoration: underline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  &__checkbox-icon {
+    position: relative;
+    border: 2px solid var(--title-color);
+    width: 16px;
+    height: 15px;
+    border-radius: 3px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  &__checkbox-svg {
+    opacity: 0;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+  }
+
+  &__checkbox-in--checked {
+    position: absolute;
+    left: 62px;
+    display: none;
+    outline: 0;
+  }
+
+  &__checkbox-in--checked:checked + &__checkbox-icon &__checkbox-svg {
+    opacity: 1;
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  &__send-btn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--background-white);
+    background: var(--active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 76px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__input:focus + &__icon {
+    fill: var(--active-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input:focus {
+    border-color: var(--active-color);
+  }
+
+  &__container {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    display: flex;
+    height: 14px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 1;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--background-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  .is-hidden .is-hidden--active {
+    transform: scale(0);
+  }
+}

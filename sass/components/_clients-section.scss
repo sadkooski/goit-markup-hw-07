@@ -1,0 +1,24 @@
+.clients {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  &__icons {
+    justify-content: center;
+    align-items: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__container {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: var(--icons-inactive) solid 1px;
+    fill: var(--icons-inactive);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

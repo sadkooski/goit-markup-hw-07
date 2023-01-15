@@ -1,0 +1,68 @@
+
+.footer__social-element:hover,
+.footer__social-element:focus,
+.employees__icons-element:hover,
+.employees__icons-element:focus {
+  background-color: var(--active-color);
+}
+.employees__icons-element:hover .employees__icons-svg,
+.employees__icons-element:focus .employees__icons-svg {
+  fill: var(--background-white);
+}
+.header__contacts-link:hover,
+.header__contacts-link:focus,
+.footer__contacts-link:hover,
+.footer__contacts-link:focus,
+.navigation-list__link:hover,
+.navigation-list__link:focus {
+  color: var(--active-color);
+}
+
+.header__contacts-link:hover > .header__contacts-icon,
+.header__contacts-link:focus > .header__contacts-icon {
+  fill: var(--active-color);
+}
+.page-active::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: var(--active-color);
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+  }
+  .page-active--color {
+    color: #2196f3;
+  }
+  
+.portfolio__nav-button:hover,
+.portfolio__nav-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio__nav-button:hover,
+.portfolio__nav-button:focus {
+  color: var(--background-white);
+  background: var(--active-color);
+}
+.portfolio__projects-element:hover .portfolio__projects-transform {
+    transform: translateY(-294px);
+  }
+  .portfolio__projects-element:hover,
+  .portfolio__projects-element:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+.clients__container:hover,
+.clients__container:focus {
+  border-color: var(--active-color);
+  fill: var(--active-color);
+}
+
+.clients__container:hover > .client__icons,
+.clients__container:focus > .client__icons {
+  border-color: var(--active-color);
+  fill: var(--active-color);
+}
