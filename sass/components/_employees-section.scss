@@ -50,4 +50,28 @@
   &__element:not(:last-child) {
     margin-right: 30px;
   }
+
+  &__icons-svg {
+    fill: var(--icons-inactive);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
+
+  &__icons-element {
+    background-color: transparent;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

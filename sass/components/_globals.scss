@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:hover,
+:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+}
+
+.svg {
+  vertical-align: middle;
+}
+
+.body {
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+.h1 {
+  margin-left: 252px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-white);
+  text-align: center;
+}
+
+.titles {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: -15px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.icon {
+  display: flex;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
