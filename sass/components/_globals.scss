@@ -17,9 +17,9 @@
 }
 
 .body {
-  background: #ffffff;
-  font-family: "Roboto", sans-serif;
-  color: #212121;
+  background: var(--background-white);
+  font-family: var(--main-font-family);
+  color: var(--title-color);
 }
 
 .h1 {
