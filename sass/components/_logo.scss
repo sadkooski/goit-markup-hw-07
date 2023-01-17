@@ -10,11 +10,11 @@
   margin-top: 24px;
   margin-bottom: 25px;
 
-  .logo__footer {
+  &__footer {
     color: var(--background-white);
   }
 
-  .logo__header {
+  &__header {
     color: var(--title-color);
   }
 }
