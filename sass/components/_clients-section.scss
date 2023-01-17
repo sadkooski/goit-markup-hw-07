@@ -21,4 +21,14 @@
     align-items: center;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  &__container:hover,
+  &__container:focus {
+    border-color: var(--active-color);
+  }
+
+  &__container:hover &__icons,
+  &__container:focus &__icons {
+    fill: var(--active-color);
+  }
 }
