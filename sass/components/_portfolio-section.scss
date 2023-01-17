@@ -35,8 +35,13 @@
     background-color: var(--background-white);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
+  }
+
+  &__projects-element {
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__projects-card {
@@ -74,12 +79,6 @@
     /* or 156% */
     letter-spacing: 0.03em;
     margin: 49px 45px 49px 24px;
-  }
-
-  &__projects-element {
-    display: flex;
-    flex-direction: column;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__projects-title {
