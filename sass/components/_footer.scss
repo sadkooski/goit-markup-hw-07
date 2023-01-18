@@ -143,4 +143,14 @@
     fill: var(--background-white);
     margin-left: 24px;
   }
+
+  &__social-element:hover,
+  &__social-element:focus {
+    background-color: var(--active-color);
+  }
+
+  &__contacts-link:hover,
+  &__contacts-link:focus {
+    color: var(--active-color);
+  }
 }
