@@ -156,7 +156,7 @@
     outline: 0;
   }
 
-  &__checkbox-in--checked:checked + &__checkbox-icon &__checkbox-svg {
+  &__checkbox-input:checked + &__checkbox-icon &__checkbox-svg {
     opacity: 1;
   }
 
